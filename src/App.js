@@ -1,20 +1,24 @@
 import React from 'react'
+import {BrowserRouter as Router , Route} from 'react-router-dom'
 import {Container} from 'react-bootstrap'
+import Home from './Pages/Home'
 import Header from './Component/Header/Header'
 import Footer from './Component/Footer/Footer'
-import Home from './Pages/Home'
+import  Product from './Pages/Product'
+
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header/>
       <main className='py-3'>
       <Container>
-        <Home></Home>
+        <Route  path="/" component={Home}  exact />
+        <Route  path ="./Pages/Product" component={Product} />
       </Container>
       </main>
       <Footer/>
-    </div>
+    </Router> 
   )
 }
 

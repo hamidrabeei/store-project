@@ -9,7 +9,7 @@ const Home = () => {
       <Row className='py-3'> 
         {products.map((item) =>{
             return(
-                <Col sm={12} md={6} lg={4}>
+                <Col key={item._id} sm={12} md={6} lg={4}>
                 <Product Product={item}/>
                 </Col>
           )            
