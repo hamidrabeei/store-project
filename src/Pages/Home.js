@@ -1,18 +1,21 @@
 import React from 'react'
-import { Row , Col } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap'
+
+import Product from '../components/Product/Product'
+
 import products from '../products'
-import Product from '../Component/Product/Product'
+
 const Home = () => {
   return (
     <div>
-      <h1 className ='text-center'>products</h1>
-      <Row className='py-3'> 
-        {products.map((item) =>{
-            return(
-                <Col key={item._id} sm={12} md={6} lg={4}>
-                <Product Product={item}/>
-                </Col>
-          )            
+      <h3 className='text-center'>List products</h3>
+      <Row>
+        {products.map((item) => {
+          return (
+            <Col key={item._id} sm={12} md={6} lg={4}>
+              <Product product={item} />
+            </Col>
+          )
         })}
       </Row>
     </div>

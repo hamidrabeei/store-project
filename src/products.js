@@ -5,7 +5,7 @@ const products = [
     image: '/images/airpods.jpg',
     description: 'توضیحات محصول',
     price: 99,
-    brand: 'Apple'
+    brand : 'Apple',
   },
   {
     _id: '2',
@@ -13,7 +13,7 @@ const products = [
     image: '/images/apple-watch.jpg',
     description: 'توضیحات محصول',
     price: 79,
-    brand: 'Apple'
+    brand : 'Apple',
   },
   {
     _id: '3',
@@ -21,7 +21,7 @@ const products = [
     image: '/images/iphone-12.jpg',
     description: 'توضیحات محصول',
     price: 89,
-    brand: 'Apple'
+    brand : 'Apple',
   },
   {
     _id: '4',
@@ -29,7 +29,7 @@ const products = [
     image: '/images/iphone-se.jpg',
     description: 'توضیحات محصول',
     price: 29,
-    brand: 'Apple'
+    brand :'Apple',
   },
   {
     _id: '5',
@@ -37,7 +37,7 @@ const products = [
     image: '/images/macbook.jpg',
     description: 'توضیحات محصول',
     price: 89,
-    brand: 'Apple'
+    brand : 'Apple',
   },
   {
     _id: '6',
@@ -45,8 +45,7 @@ const products = [
     image: '/images/mouse.jpg',
     description: 'توضیحات محصول',
     price: 59,
-    brand: 'Logitech'
-
+    brand : 'Logitech',
   },
 ]
 
