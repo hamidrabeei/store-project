@@ -4,13 +4,13 @@ import { Row, Col, Image, ListGroup, Button } from 'react-bootstrap'
 import axios from 'axios'
 
 const Product = ({ match }) => {
-  const [product, setproducts] = useState({})
+  const [product, setProduct] = useState({})
 
   useEffect(()=>{
 
     const sendRequest = async() =>{
       const response = await axios.get(`http://localhost:8000/api/products/${match.params.id}`)
-      setproducts(response.data)
+      setProduct(response.data)
   
       }
   
